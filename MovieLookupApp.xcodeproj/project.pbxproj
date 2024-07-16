@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1834F4F42C45F69E009D3BAD /* MovieLookupAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834F4F32C45F69E009D3BAD /* MovieLookupAppApp.swift */; };
+		1834F4F42C45F69E009D3BAD /* MovieLookupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834F4F32C45F69E009D3BAD /* MovieLookupApp.swift */; };
 		1834F4F62C45F69E009D3BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834F4F52C45F69E009D3BAD /* ContentView.swift */; };
 		1834F4F82C45F69F009D3BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1834F4F72C45F69F009D3BAD /* Assets.xcassets */; };
 		1834F4FC2C45F69F009D3BAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1834F4FB2C45F69F009D3BAD /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		1834F4F02C45F69E009D3BAD /* MovieLookupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieLookupApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1834F4F32C45F69E009D3BAD /* MovieLookupAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLookupAppApp.swift; sourceTree = "<group>"; };
+		1834F4F32C45F69E009D3BAD /* MovieLookupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLookupApp.swift; sourceTree = "<group>"; };
 		1834F4F52C45F69E009D3BAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1834F4F72C45F69F009D3BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1834F4F92C45F69F009D3BAD /* MovieLookupApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieLookupApp.entitlements; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		1834F4F22C45F69E009D3BAD /* MovieLookupApp */ = {
 			isa = PBXGroup;
 			children = (
-				1834F4F32C45F69E009D3BAD /* MovieLookupAppApp.swift */,
+				1834F4F32C45F69E009D3BAD /* MovieLookupApp.swift */,
 				1834F4F52C45F69E009D3BAD /* ContentView.swift */,
 				1834F4F72C45F69F009D3BAD /* Assets.xcassets */,
 				1834F4F92C45F69F009D3BAD /* MovieLookupApp.entitlements */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1834F4F62C45F69E009D3BAD /* ContentView.swift in Sources */,
-				1834F4F42C45F69E009D3BAD /* MovieLookupAppApp.swift in Sources */,
+				1834F4F42C45F69E009D3BAD /* MovieLookupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +270,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieLookupApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3GPBYHJALT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -282,7 +283,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -306,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieLookupApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3GPBYHJALT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -318,7 +320,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
