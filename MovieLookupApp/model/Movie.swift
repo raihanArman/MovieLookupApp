@@ -12,6 +12,7 @@ struct Movie: Identifiable, Decodable {
     let id: Int
     let poster_path: String?
     let title: String
+    let overview: String
     let vote_average: Float
     let backdrop_path: String?
     
@@ -23,6 +24,12 @@ struct Movie: Identifiable, Decodable {
     var postThumbnail: URL? {
         let baseUrl = URL(string: "https://image.tmdb.org/t/p/w100")!
         return baseUrl.appending(path: poster_path ?? "")
+    }
+    
+    static var preview: Movie {
+        return Movie(
+            adult: false, id: 2434343, poster_path: "", title: "", overview: "", vote_average: 0.0, backdrop_path: ""
+        )
     }
     
 }
