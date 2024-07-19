@@ -7,7 +7,7 @@
 
 import Foundation
 @MainActor
-class MovieDBViewModel: ObservableObject {
+class MovieTrendingViewModel: ObservableObject {
     @Published var trending: [Movie] = []
     @Published var searchResults: [Movie] = []
     
@@ -58,5 +58,4 @@ class MovieDBViewModel: ObservableObject {
             }
         }
     }
-    
 }

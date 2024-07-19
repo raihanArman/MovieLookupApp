@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MoviewDetailView: View {
     @Environment(\.dismiss) var dismiss
+    @StateObject var model = MoviewDetailViewModel()
+    
     let movie: Movie
     let headerHeight: CGFloat = 400
     
@@ -58,6 +60,21 @@ struct MoviewDetailView: View {
                     Text(movie.overview)
                         .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.secondary)
+                    
+                    HStack {
+                        Text("Cast & Crew")
+                            .font(.title3)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        Spacer()
+                    }
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHStack(alignment: .top) {
+                            ForEach(model.castProfiles) { cast in
+                                CastCrewTile(cast: cast)
+                            }
+                        }
+                    }
                 }
             }
             .padding()
@@ -73,6 +90,10 @@ struct MoviewDetailView: View {
             .padding()
         }
         .toolbar(.hidden, for: .navigationBar)
+        .task {
+            await model.movieCredit(for: movie.id)
+            await model.loadCastProfiles()
+        }
     }
 }
 

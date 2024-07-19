@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiscoverView: View {
-    @StateObject var viewModel = MovieDBViewModel()
+    @StateObject var viewModel = MovieTrendingViewModel()
     @State var searchText = ""
     
     var body: some View {
